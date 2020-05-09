@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/cityEdittextId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter City Name"
+        android:textColorHint="#fff"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:background="#6E5E5E"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="80dp"
+        android:onClick="getWeather"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        android:text="Get Data"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#BFA1A1">
+        <TextView
+            android:id="@+id/textviewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather Info"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</LinearLayout>
